@@ -6,7 +6,7 @@ import {
 
 const connection: CloudflareD1Connection = new CloudflareD1Connection(
   process.env.API_KEY!,
-  process.env.ACCOUNT_ID!,
+  process.env.ACCOUNT_KEY!,
   process.env.DATABASE_ID!
 );
 // @ts-ignore
