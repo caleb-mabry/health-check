@@ -68,7 +68,7 @@ export default function Home() {
   }, [currentMessage]);
 
   return (
-    <div className="flex flex-col items-center justify-center gap-4">
+    <div className="flex flex-col items-center justify-center gap-4 overflow-x-hidden overflow-y-auto">
       <Modal
         show={showModal}
         onClose={toggleModal}
