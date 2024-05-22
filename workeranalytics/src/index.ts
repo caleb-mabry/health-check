@@ -12,7 +12,7 @@
  */
 import { Outerbase, CloudflareD1Connection } from '@outerbase/sdk';
 
-async function getGroqChatCompletion(env) {
+async function getGroqChatCompletion(env: Env) {
 	const Groq = require('groq-sdk');
 	const groq = new Groq({
 		apiKey: env.GROK_KEY,
