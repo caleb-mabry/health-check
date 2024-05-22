@@ -6,13 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sync-models": "sync-database-models PATH=./models API_KEY=outerbase_api_key"
   },
   "dependencies": {
     "@cloudflare/next-on-pages": "^1.11.3",
-    "@outerbase/query-builder": "^1.0.11",
+    "@outerbase/sdk": "^1.0.10",
+    "@radix-ui/themes": "^3.0.5",
     "@vapi-ai/web": "^1.1.5",
     "next": "14.2.3",
+    "phosphor-react": "^1.4.1",
     "react": "^18",
     "react-dom": "^18"
   },
