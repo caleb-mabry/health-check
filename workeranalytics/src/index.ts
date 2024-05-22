@@ -22,7 +22,7 @@ async function getGroqChatCompletion(env) {
 	const db = Outerbase(connection);
 
 	const { data } = await db.selectFrom([{ table: 'conversations', columns: ['conversation'] }]).query();
-	const response = groq.chat.completions.create({
+	const response = await groq.chat.completions.create({
 		messages: [
 			{
 				role: 'user',
@@ -32,7 +32,7 @@ async function getGroqChatCompletion(env) {
 		model: 'llama3-8b-8192',
 	});
 	await db
-		.insert({ analysis: JSON.stringify(response) })
+		.insert({ analysis: JSON.stringify(response.choices[0]?.message?.content) })
 		.into('analysis')
 		.query();
 	return response;
