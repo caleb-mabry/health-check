@@ -2,7 +2,7 @@
     <h1>Health Check</h1>
     <a href="https://health-check.com/">Website</a>
     <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-    <a href="https://health-check.com/blog/">Blog</a>
+    <a href="https://calebmabry.hashnode.dev/vapi-hackathon-health-check-application">Blog</a>
     <br />
     <hr />
 

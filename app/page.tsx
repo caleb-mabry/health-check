@@ -138,6 +138,15 @@ export default function Home() {
       <footer className="w-[50%]">
         <div className="flex flex-col text-center gap-5">
           <p>&copy; {new Date().getFullYear()} Caleb Mabry</p>
+          <p>
+            <a
+              className="underline"
+              href="https://calebmabry.hashnode.dev/vapi-hackathon-health-check-application"
+            >
+              Blog
+            </a>
+          </p>
+
           <div>
             Powered by
             <p className="flex w-full flex-row justify-between underline">
